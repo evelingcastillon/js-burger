@@ -5,9 +5,10 @@ function renderInput(list, el) {
         el.insertAdjacentHTML('beforeend',
         `
         <div class="form_group">
-            <img width="40" src="./assets/img/${list[counter][0] + '.svg'}">
-            <label for="${list[counter][0]}">${list[counter][0]}</label>
-            <input class="checkbox_red" type="checkbox" name="${list[counter][0]}" id="${list[counter][0]}" data-price="${list[counter][1]}">
+            <img class="mr-3" width="50" src="./assets/img/${list[counter][0] + '.svg'}">
+            <label class="mr-3" for="${list[counter][0]}">${list[counter][0]}</label>
+            <input class="checkbox_red mr-3" type="checkbox" name="${list[counter][0]}" id="${list[counter][0]}" data-price="${list[counter][1]}">
+            <span class="text-danger pr-3">add</span>
         </div>
         `
         )
