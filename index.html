@@ -1,39 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burger</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Burger</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-
+    
+    <!-- Site header -->
     <div class="container">
-        <!-- Site header -->
-        <header id="site_header" class="d-flex align-items-center">
-            <h1 class="px-5">Create your burger</h1>
+        <header id="site_header" class="">
+            <div class="row row_header">
+                <h1 class="col-12 p-0">Create your burger</h1>
+                <div class="logo_burger">
+                    <img class="" src="./assets/img/burger-top.png" alt="">
+                </div>
+            </div>
         </header>
+    </div>
         <!-- /Site header -->
     
+    
         <!-- Site Main  -->
-        <main id="site_main">
-            <h2 class="px-5">Name your Burger</h2>
-            <h3 class="px-5">Ingredients</h3>
-            <section class="ingredients d-flex flex-wrap px-5">
-    
-            </section>
-    
-            <input class="px-5" id="coupon" type="text" value="">
-            <button class="text-center">calculate</button>
+    <div class="container">
+        <main id="site_main" >
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="">Name your Burger</h2>
+
+                </div>
+                <h3 class="col-12 px-5">Ingredients</h3>
+                <section class="col-12 ingredients d-flex flex-wrap">
+                
+                </section>
+                <div class="col-3 text-right">
+                    <label class="" for="sconto">Discount Coupon</label>
+                </div>
+                <div class="col-9">
+                    <input class="cod_text" id="coupon" type="text" value="">
+                </div>
+                <div class="col-12 d-flex justify-content-lg-center">
+                    <button class="btn_calculate rounded">calculate</button>
+                </div>
+            </div>
+
         </main>
         <!-- /Site Main  -->
-    
+    </div>
+
+    <div class="container">
         <!-- Site Footer -->
-        <footer id="site_footer" class="d-flex align-items-center">
-            <h3 class="px-5">Your Price</h3>
-            <div id="burger_price" class="px-5"></div>
+        <footer id="site_footer" class="">
+            <div class="row">
+                <h3 class="col-lg-6 px-5">Your Price</h3>
+                <h3 id="burger_price" class="col-lg-6 text-right px-5"></h3>
+            </div>
         </footer>
         <!-- /Site Footer -->
     </div>

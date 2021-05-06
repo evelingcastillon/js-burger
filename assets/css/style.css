@@ -6,17 +6,49 @@
 body {
     background-color: rgba(255, 245, 226, 1);
 }
-.container {
-    width: 70%;
-    margin: auto;
-}
+
 #site_header {
     height: 130px;
     background-color: rgba(253, 187, 64, 1);
 }
+.row_header {
+    position: relative;
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px
+}
+.col-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.logo_burger > img {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 #site_main {
     height: 500px;
     background-color: white;
+}
+.cod_text {
+    width: 80%;
+    background-color: rgba(255, 245, 226, 1);
+    border: none;
+    color: grey;
+    padding: 0.1rem 0;
+}
+.form_group > .checkbox_red {
+    
+    color: -internal-light-dark(black, rgb(255, 21, 21));
+}
+.btn_calculate{
+    background-color: rgba(253, 187, 64, 1);
+    font-weight: 700;
+    border: none;
+    padding: 0.5rem 2rem;
 }
 #site_footer {
     height: 80px;
